@@ -1,0 +1,1 @@
+SELECT DISTINCT * FROM chats INNER JOIN clients ON chats.from_id =clients.id OR chats.to_id = clients.id WHERE (chats.from_id = 18 AND chats.to_id = 20) OR (chats.from_id = 19 AND chats.to_id = 18)
